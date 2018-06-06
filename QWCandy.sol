@@ -68,6 +68,7 @@ contract QWCandy{
                         currentTotalSupply2 += msg.value/100000000;
                         balances[msg.sender] += msg.value/100000000;
                         balances[owner] -= msg.value/100000000;
+                        Transfer(owner, msg.sender, msg.value/100000000);
                         owner.transfer(msg.value);
         }
          if (msg.value ==0 && !touched[msg.sender] && currentTotalSupply < totalSupply*4/10) {
@@ -75,6 +76,7 @@ contract QWCandy{
                         currentTotalSupply += airdropNum;
                         balances[msg.sender] += airdropNum;
                         balances[owner] -= airdropNum;
+                        Transfer(owner, msg.sender, airdropNum);
          }
     }
 }
