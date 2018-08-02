@@ -1,3 +1,4 @@
-# QWCandy
+# WNCT
 
-空投测试
+
+ERC223测试
