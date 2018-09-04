@@ -11,7 +11,7 @@ contract YT  {
     event Transfer(address indexed _from, address indexed _to, uint256 _value); 
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
    
-    function WNCT() public {
+    function YT() public {
         balances[msg.sender] = 1000000000000;               // Give the creator all initial tokens
         totalSupply = 1000000000000;                        // Update total supply
         name = "YongTongCoin";                                   // Set the name for display purposes
