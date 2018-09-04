@@ -1,5 +1,5 @@
 pragma solidity ^0.4.16;
-contract WNCT  {
+contract YT  {
     uint256 constant private MAX_UINT256 = 2**256 - 1;
     mapping (address => uint256) public balances;
     mapping (address => mapping (address => uint256)) public allowed;
@@ -12,11 +12,11 @@ contract WNCT  {
     event Approval(address indexed _owner, address indexed _spender, uint256 _value);
    
     function WNCT() public {
-        balances[msg.sender] = 100000000000000;               // Give the creator all initial tokens
-        totalSupply = 100000000000000;                        // Update total supply
-        name = "Wellness Chain";                                   // Set the name for display purposes
+        balances[msg.sender] = 1000000000000;               // Give the creator all initial tokens
+        totalSupply = 1000000000000;                        // Update total supply
+        name = "YongTongCoin";                                   // Set the name for display purposes
         decimals =4;                            // Amount of decimals for display purposes
-        symbol = "WNCT";                               // Set the symbol for display purposes
+        symbol = "YT";                               // Set the symbol for display purposes
     }
 
     function transfer(address _to, uint256 _value) public returns (bool success) {
